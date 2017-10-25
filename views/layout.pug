@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .sidenav
+      a.brand(href="#") GoJobs
+      nav
+        a.active(href="#") 
+          i.fa.fa-home(aria-hidden="true")
+          | Home
+        a(href="#") 
+          i.fa.fa-newspaper-o(aria-hidden="true")
+          | Applied History
+        a(href="#")
+          i.fa.fa-bookmark-o(aria-hidden="true")
+          | Jobs Bookmarks
+        a(href="#") 
+          i.fa.fa-calendar(aria-hidden="true")
+          | Interview Schedule
+        a(href="#") 
+          i.fa.fa-user-o(aria-hidden="true")
+          | Profile      
+        a(href="#") 
+          i.fa.fa-cog(aria-hidden="true")
+          | Settings
+          
+    
+    .main
+      block content
