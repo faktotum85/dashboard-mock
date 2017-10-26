@@ -3,6 +3,7 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name="viewport" content="width=device-width,initial-scale=1")
   body
     .sidenav
       a.brand(href="#") GoJobs
@@ -25,8 +26,8 @@ html
         a(href="#") 
           i.fa.fa-cog(aria-hidden="true")
           | Settings
-          
-    .main
+
+    .container          
       .topnav
         .search
           i.fa.fa-search(aria-hidden="true")
@@ -36,5 +37,6 @@ html
           i.notifications.fa.fa-bell-o(aria-hidden="true")
           img.candidate(src="images/candidate.jpg" alt="Portrait shot of candidate")
           i.dropdown.fa.fa-caret-down(aria-hidden="true")
-      
-      block content
+
+      .main
+        block content
