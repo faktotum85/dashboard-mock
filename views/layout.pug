@@ -26,6 +26,15 @@ html
           i.fa.fa-cog(aria-hidden="true")
           | Settings
           
-    
     .main
+      .topnav
+        .search
+          i.fa.fa-search(aria-hidden="true")
+          | Type here for search
+        .menu
+          | + Add
+          i.notifications.fa.fa-bell-o(aria-hidden="true")
+          img.candidate(src="images/candidate.jpg" alt="Portrait shot of candidate")
+          i.dropdown.fa.fa-caret-down(aria-hidden="true")
+      
       block content
