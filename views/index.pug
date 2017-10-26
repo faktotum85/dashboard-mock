@@ -5,9 +5,37 @@ block content
   h2 Welcome to Gojobs job seeker dashboard
   
   .row
-    .card
-    .card
-    .card
+    section.card#profile
+      .info
+        img(src="images/candidate.jpg" alt="Portrait shot of candidate")
+        h1 Simon Weller
+        h2 Frontend Developer
+      .history
+        div
+          span.label Previous
+          span.position oBrands GmbH
+        div
+          span.label Education
+          span.position London School of Economics
+    section.card#schedule
+      h1 Interview Schedule
+      i.fa.fa-ellipsis-h.menu(aria-hidden="true")
+      time(datetime="2016-07-21") 21 Jul, 2016
+      .appointment
+        .marker.ot OT
+        .details
+          span.area Online Travel & Ticketing Site
+          span.position Senior UI/UX Designer
+          time(datetime="08:00") 08:00 AM
+      .appointment
+        .marker.os OS
+        .details
+          span.area Online Shopping e-commerce
+          span.position Senior UI/UX Designer
+          time(datetime="13:00") 01:00 PM
+    section.card#status
+      h1 Applying status
+      i.fa.fa-ellipsis-h.menu(aria-hidden="true")      
       
   .row
-    .card.card-wide
+    section.card.card-wide
