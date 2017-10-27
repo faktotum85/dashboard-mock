@@ -1,0 +1,79 @@
+#status .chart
+  background: $col-font-light
+  border-radius: 50%
+  position: relative
+  // color picked up by JS to use in background-image
+  // completion percent filled with background image
+  // <50%: first linear-gradient is to: cancel out anything below 0%
+  // linear-gradient(270deg, transparent 50%, $col-font-light 50%), linear-gradient([360*%-90]deg, transparent 50%, $col-sb-contrast 50%)
+  // >50%: first linear-gradient is to: fill in anything below 50%
+  // linear-gradient(90deg, transparent 50%, $col-sb-contrast 50%), linear-gradient([360*%-90]deg, transparent 50%, $col-sb-contrast 50%)
+
+#status .chart.hired>*
+  margin: 0
+  position: absolute
+
+#status .chart.hired
+  height: 20rem
+  width: 20rem
+  margin: 2rem auto 0 auto
+  color: $col-sb-contrast
+
+#status .chart.interviewed
+  height: calc(100% - 5rem)
+  width: calc(100% - 5rem)
+  top: 0.5rem
+  left: 0.5rem
+  color: $col-interviewed
+  border: 2rem solid $col-cards
+
+#status .chart.rejected
+  height: calc(100% - 10rem)
+  width: calc(100% - 10rem)
+  top: 3rem
+  left: 3rem
+  color: $col-rejected
+  border: 2rem solid $col-cards
+
+#status .donut-hole
+  height: calc(100% - 11rem)
+  width: calc(100% - 11rem)
+  top: 5.5rem
+  left: 5.5rem
+  border-radius: 50%
+  background: $col-cards
+
+#status .legend
+  font-size: 1.2rem
+  margin: 2rem -1rem 0 -1rem
+  height: 3rem
+
+#status .legend>*
+  float: left
+  width: 33%
+
+#status .legend-marker
+  display: inline-block
+  margin: 1rem 0
+  width: 1rem
+  height: 1rem
+  border-radius: 50%
+  margin-right: 1rem
+
+#status .legend-hired .legend-marker
+  background: $col-sb-contrast
+
+#status .legend-interviewed .legend-marker
+  background: $col-interviewed
+
+#status .legend-rejected .legend-marker
+  background: $col-rejected
+
+#status .legend-text
+  display: inline-block
+  height: 100%
+  line-height: 1.5rem
+
+#status .legend-text .stats
+  font-weight: bold
+  color: $col-font-dark

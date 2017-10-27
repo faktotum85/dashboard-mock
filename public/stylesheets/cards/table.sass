@@ -1,0 +1,52 @@
+table
+  width: calc(100% - 1rem)
+  font-size: 1.4rem
+  color: $col-font
+  margin: 0 0.5rem
+  white-space: nowrap
+
+tr
+  height: 6.5rem
+  line-height: 6.5rem
+  background: $col-cards
+  border: 1px solid $col-table-header
+
+tr:first-child
+  font-size: 1.2rem
+  height: 5rem
+  line-height: 5rem
+  background: $col-table-header
+  color: $col-table-font
+
+td, th
+  padding: 0 1rem
+
+td:first-child, th:first-child
+  padding-left: 3rem
+
+th
+  text-align: left
+  text-transform: uppercase
+
+th:first-child
+  border-top-left-radius: $border-radius
+
+th:last-child
+  border-top-right-radius: $border-radius
+
+tr:last-child td:first-child
+  border-bottom-left-radius: $border-radius
+
+tr:last-child td:last-child
+  border-bottom-right-radius: $border-radius
+
+td:first-child, td:nth-child(2)
+  color: $col-font-dark
+
+table .marker
+  height: 4rem
+  width: 4rem
+  line-height: 4rem
+  display: inline-block
+  vertical-align: middle
+  margin-right: 2rem

@@ -36,6 +36,82 @@ block content
     section.card#status
       h1 Applying status
       i.fa.fa-ellipsis-h.menu(aria-hidden="true")      
+      .chart.hired(data-fill="2" data-max="4")
+        .chart.interviewed(data-fill="4" data-max="6")
+        .chart.rejected(data-fill="5" data-max="7")
+        .donut-hole
+      .legend
+        .legend-hired
+          .legend-marker
+          .legend-text
+            .stats 2 of 13
+            | Hired
+        .legend-interviewed
+          .legend-marker
+          .legend-text
+            .stats 4 of 13
+            | Interviewed
+        .legend-rejected
+          .legend-marker
+          .legend-text
+            .stats 5 of 13
+            | Rejected
+  table
+    tr
+      th Company
+      th Jobs
+      th End of Application
+      th Location
+      th
+    tr
+      td
+        .marker.os OS 
+        | Online Shopping e-commerce
+      td Java Developer
+      td 
+        time(datetime="2016-06-27") 27 Jun, 2016
+      td Bali
+      td 
+        i.fa.fa-ellipsis-h.menu(aria-hidden="true")
+    tr
+      td 
+        .marker.ds DS
+        | Digital Solutions Company
+      td Backend Developer (Java or PHP)
+      td 
+        time(datetime="2016-06-24") 24 Jun, 2016
+      td Jakarta
+      td 
+        i.fa.fa-ellipsis-h.menu(aria-hidden="true")
+    tr
+      td
+        .marker.ds DS 
+        |Digital Solutions Company
+      td Front-end Developer
+      td 
+        time(datetime="2016-06-25") 25 Jun, 2016
+      td Jakarta
+      td 
+        i.fa.fa-ellipsis-h.menu(aria-hidden="true")
+    tr
+      td 
+        .marker.ot OT
+        | Online Travel & Ticketing Site
+      td UI/UX Designer
+      td 
+        time(datetime="2016-07-20") 20 Jul, 2016
+      td Jakarta
+      td 
+        i.fa.fa-ellipsis-h.menu(aria-hidden="true")            
+    tr
+      td 
+        .marker.mb MB
+        | Malaysian Based Software Developer
+      td Java Developer
+      td 
+        time(datetime="2016-08-01") 1 Aug, 2016
+      td Surabaya
+      td 
+        i.fa.fa-ellipsis-h.menu(aria-hidden="true")            
+    
       
-  .row
-    section.card.card-wide
