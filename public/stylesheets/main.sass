@@ -11,20 +11,22 @@
 
 .main .row
   display: flex
+  flex-wrap: wrap
   justify-content: space-between
-  margin-bottom: 2rem
+  margin-bottom: 1rem
+  // cancel out extra margin on rightmost card(s)
+  margin-right: -2rem
 
 .main .card
   border-radius: $border-radius
-  margin: 1rem 0.5rem
+  margin: 1rem 2.5rem 2rem 0.5rem
   min-height: 27rem
+  min-width: 22rem
   flex-basis: 25%
+  flex: 1
   background: $col-cards
   padding: 3rem
   display: flex
   flex-direction: column
   position: relative
   color: $col-font-dark
-
-.main .card.card-wide
-  flex-basis: 100%

@@ -3,7 +3,6 @@ table
   font-size: 1.4rem
   color: $col-font
   margin: 0 0.5rem
-  white-space: nowrap
 
 tr
   height: 6.5rem
@@ -50,3 +49,48 @@ table .marker
   display: inline-block
   vertical-align: middle
   margin-right: 2rem
+
+table span.mobile-label
+  display: none
+
+// responsive styles
+@media #{$max-tablet}
+  tr:first-child
+    display: none
+
+  table, tbody, tr, td
+    display: block
+
+  table
+    width: calc(100% - 1rem)
+
+  tbody, tr
+    width: 100%
+
+  td
+    width: calc(100% - 8rem)
+    line-height: 2rem
+    padding-left: 7rem
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+
+  tr
+    height: 100%
+    position: relative
+    padding: 1rem 0
+
+  td:first-child
+    width: calc(100% - 2rem)
+    padding-left: 1rem
+
+  td:last-child
+    position: absolute
+    top: 0.5rem
+    right: 0.5rem
+    display: inline
+    width: auto
+    padding-left: 1rem
+
+  table span.mobile-label
+    display: inline

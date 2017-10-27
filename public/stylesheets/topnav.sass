@@ -7,6 +7,11 @@
   text-align: center
   font-size: 1.6rem
 
+.topnav .responsive-menu
+  float: left
+  display: none
+  width: 6.5rem
+
 .topnav .search
   float: left
 
@@ -35,3 +40,14 @@
 
 .topnav .menu .notifications
   width: 6rem
+
+// responsive styles
+@media #{$max-laptop}
+  .topnav .responsive-menu
+    display: inline-block
+
+@media #{$mobile}
+  .topnav .search input
+    display: none
+  .topnav .search
+    width: 2.5rem

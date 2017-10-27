@@ -1,3 +1,11 @@
+.sidenav .menu-close
+  position: absolute
+  font-size: 2rem
+  top: 1rem
+  right: 1rem
+  display: none
+  color: $col-cards
+
 .sidenav a
   text-decoration: none
 
@@ -33,3 +41,9 @@
   color: $col-sb-contrast
   width: 2.5rem
   text-align: center
+
+// responsive styles
+
+@media #{$max-laptop}
+  .sidenav .menu-close
+    display: inline

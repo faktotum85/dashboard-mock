@@ -1,5 +1,14 @@
 (() => {
 
+  const sidenav = document.querySelector('.sidenav')
+  // add click listener to menu button
+  document.querySelector('.responsive-menu').addEventListener('click', () => {
+    sidenav.classList.add('open');
+  });
+  document.querySelector('.menu-close').addEventListener('click', () => {
+    sidenav.classList.remove('open');
+  });
+
   function fillChart(el) {
     // sets background-image style property based on attributes data-fill and data-max
     // make sure element color and background-color are set to neutral and white respectively as these are used below

@@ -43,10 +43,16 @@
   border-radius: 50%
   background: $col-cards
 
+#status .legend-wrapper
+  // wrapper so negativ margin can be combined with margin auto
+  // to center in case of restricted width
+  margin: 0 -1rem
+
 #status .legend
   font-size: 1.2rem
-  margin: 2rem -1rem 0 -1rem
+  margin: 2rem auto 0 auto
   height: 3rem
+  max-width: 35rem
 
 #status .legend>*
   float: left

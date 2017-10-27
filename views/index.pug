@@ -40,22 +40,23 @@ block content
         .chart.interviewed(data-fill="4" data-max="6")
         .chart.rejected(data-fill="5" data-max="7")
         .donut-hole
-      .legend
-        .legend-hired
-          .legend-marker
-          .legend-text
-            .stats 2 of 13
-            | Hired
-        .legend-interviewed
-          .legend-marker
-          .legend-text
-            .stats 4 of 13
-            | Interviewed
-        .legend-rejected
-          .legend-marker
-          .legend-text
-            .stats 5 of 13
-            | Rejected
+      .legend-wrapper
+        .legend
+          .legend-hired
+            .legend-marker
+            .legend-text
+              .stats 2 of 13
+              | Hired
+          .legend-interviewed
+            .legend-marker
+            .legend-text
+              .stats 4 of 13
+              | Interviewed
+          .legend-rejected
+            .legend-marker
+            .legend-text
+              .stats 5 of 13
+              | Rejected
   table
     tr
       th Company
@@ -68,9 +69,12 @@ block content
         .marker.os OS 
         | Online Shopping e-commerce
       td Java Developer
-      td 
+      td
+        span.mobile-label End of Application:  
         time(datetime="2016-06-27") 27 Jun, 2016
-      td Bali
+      td 
+        span.mobile-label Location: 
+        | Bali
       td 
         i.fa.fa-ellipsis-h.menu(aria-hidden="true")
     tr
@@ -79,8 +83,11 @@ block content
         | Digital Solutions Company
       td Backend Developer (Java or PHP)
       td 
+        span.mobile-label End of Application: 
         time(datetime="2016-06-24") 24 Jun, 2016
-      td Jakarta
+      td 
+        span.mobile-label Location: 
+        | Jakarta
       td 
         i.fa.fa-ellipsis-h.menu(aria-hidden="true")
     tr
@@ -89,8 +96,11 @@ block content
         |Digital Solutions Company
       td Front-end Developer
       td 
+        span.mobile-label End of Application: 
         time(datetime="2016-06-25") 25 Jun, 2016
-      td Jakarta
+      td 
+        span.mobile-label Location: 
+        | Jakarta
       td 
         i.fa.fa-ellipsis-h.menu(aria-hidden="true")
     tr
@@ -99,8 +109,11 @@ block content
         | Online Travel & Ticketing Site
       td UI/UX Designer
       td 
+        span.mobile-label End of Application: 
         time(datetime="2016-07-20") 20 Jul, 2016
-      td Jakarta
+      td 
+        span.mobile-label Location: 
+        | Jakarta
       td 
         i.fa.fa-ellipsis-h.menu(aria-hidden="true")            
     tr
@@ -109,8 +122,11 @@ block content
         | Malaysian Based Software Developer
       td Java Developer
       td 
+        span.mobile-label End of Application: 
         time(datetime="2016-08-01") 1 Aug, 2016
-      td Surabaya
+      td 
+        span.mobile-label Location: 
+        | Surabaya
       td 
         i.fa.fa-ellipsis-h.menu(aria-hidden="true")            
     

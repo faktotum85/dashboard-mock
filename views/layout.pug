@@ -6,6 +6,8 @@ html
     meta(name="viewport" content="width=device-width,initial-scale=1")
   body
     .sidenav
+      button.menu-close 
+        i.fa.fa-times(aria-hidden="true")
       a.brand(href="#") GoJobs
       nav
         a.active(href="#") 
@@ -29,6 +31,8 @@ html
 
     .container          
       .topnav
+        button.responsive-menu
+          i.fa.fa-bars(aria-hidden="true")
         form.search
           i.fa.fa-search(aria-hidden="true")
           input(type="search" placeholder="Type here for search") 
