@@ -25,6 +25,19 @@
     el.style.backgroundImage = linearGradient;
   }
 
-  document.querySelectorAll('.chart').forEach(el => fillChart(el));
+  window.MutationObserver = window.MutationObserver
+    || window.WebKitMutationObserver
+    || window.MozMutationObserver;
 
+  document.querySelectorAll('.chart').forEach(el => {
+    fillChart(el);
+
+    // rerun fillChart if the DOM element changes
+    let observer = new MutationObserver(function(mutation) {
+      fillChart(el)
+    });
+
+    observer.observe(el, {attributes: true}); // config: also watch for attribute changes
+
+  });
 })()
