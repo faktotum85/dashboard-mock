@@ -23,21 +23,15 @@
       `;
 
     el.style.backgroundImage = linearGradient;
-  }
 
-  window.MutationObserver = window.MutationObserver
-    || window.WebKitMutationObserver
-    || window.MozMutationObserver;
-
-  document.querySelectorAll('.chart').forEach(el => {
-    fillChart(el);
-
-    // rerun fillChart if the DOM element changes
     let observer = new MutationObserver(function(mutation) {
-      fillChart(el)
+      observer.disconnect(); // disconnect to avoid infinite loop of updates
+      fillChart(el); // when the chart is updated this code will run again re-adding the observer
     });
 
     observer.observe(el, {attributes: true}); // config: also watch for attribute changes
+  }
 
-  });
+  document.querySelectorAll('.chart').forEach(el => fillChart(el));
+
 })()
